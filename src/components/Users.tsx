@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { JsxElement } from "typescript";
 import { User } from "../interface";
-interface users {
-    users :User[]
+interface userProps {
+    users :User;
 }
 // interface userProps {
 
@@ -14,7 +14,7 @@ interface users {
 // 	userName: string | undefined,
 //     gists:number |undefined
 // }
-const Users : FC<users> = ({users}):JSX.Element=>{
+const Users : FC<userProps> = (props)=>{
     return(
         <div>
             {/* <h1>{avatar_url}</h1> */}
